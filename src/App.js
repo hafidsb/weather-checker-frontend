@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Homepage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello, world!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <header className="App-header">
+          <Home title={"Simple Weather Getter"}/>
+        </header>
+      </div>
+    </>
   );
 }
 
