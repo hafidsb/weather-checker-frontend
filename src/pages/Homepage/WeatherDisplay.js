@@ -7,54 +7,10 @@ import AirIcon from '@mui/icons-material/Air';
 import VerticalAlignTopIcon from '@mui/icons-material/VerticalAlignTop';
 import VerticalAlignBottomIcon from '@mui/icons-material/VerticalAlignBottom';
 
-const WeatherDisplay = () => {
+const WeatherDisplay = ({weatherData: data}) => {
     const style = {
         topColor: 'linear-gradient(90deg, rgba(72,117,173,1) 0%, rgba(55,128,175,1) 15%, rgba(128,169,207,1) 100%)',
         botColor: 'linear-gradient(90deg, rgba(46,53,72,1) 0%, rgba(138,146,170,1) 88%, rgba(165,167,173,1) 100%)',
-    }
-
-    const data = {
-        "coord": {
-            "lon": 149.1269,
-            "lat": -35.2931
-        },
-        "weather": [
-            {
-                "id": 804,
-                "main": "Clouds",
-                "description": "overcast clouds",
-                "icon": "04d"
-            }
-        ],
-        "base": "stations",
-        "main": {
-            "temp": 18.37,
-            "feels_like": 18.19,
-            "temp_min": 16.83,
-            "temp_max": 19.84,
-            "pressure": 1019,
-            "humidity": 74
-        },
-        "visibility": 10000,
-        "wind": {
-            "speed": 5.14,
-            "deg": 90
-        },
-        "clouds": {
-            "all": 100
-        },
-        "dt": 1666227794,
-        "sys": {
-            "type": 2,
-            "id": 2004200,
-            "country": "AU",
-            "sunrise": 1666206892,
-            "sunset": 1666254094
-        },
-        "timezone": 39600,
-        "id": 2172517,
-        "name": "Canberra",
-        "cod": 200
     }
 
     function formatAMPM(date) {

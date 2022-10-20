@@ -6,7 +6,7 @@ import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import axiosClient from '../../helpers/axiosClient';
 
-const CityPicker = () => {
+const CityPicker = ({setWeatherData}) => {
     const [selectedCityId, setSelectedCityId] = useState('');
     const [cityList, setCityList] = useState(null);
 
@@ -30,7 +30,7 @@ const CityPicker = () => {
         try {
             await axiosClient.get("/weather/city/" + selectedCityId)
                 .then(function (response) {
-                    console.log(response);
+                    setWeatherData(response.data);
                 });
         } catch (error) {
             console.log(error);
