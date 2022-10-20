@@ -2,7 +2,7 @@
 - Node>=14.0.0
 - npm>=5.6
 
-## Local installation steps:
+## Local installation steps
 1. Clone the repository
 2. Navigate to `./weather-checker-frontend` directory
 3. Run `npm install && npm start`
