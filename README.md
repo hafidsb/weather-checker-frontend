@@ -1,6 +1,7 @@
 ## Requirements
 - Node>=14.0.0
 - npm>=5.6
+- Install and run the [backend app](https://github.com/hafidsb/weather-checker-backend)
 
 ## Local installation steps
 1. Clone the repository
